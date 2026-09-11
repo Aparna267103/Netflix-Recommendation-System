@@ -45,6 +45,15 @@ Netflix-Recommendation-System/
 ├── app/
 │   └── app.py
 │
+├── data/
+│   └── cleaned_netflix.csv
+│
+├── outputs/
+│   ├── figures/
+│   └── models/
+│
+├── screenshots/
+│
 ├── README.md
 └── requirements.txt
 ```
