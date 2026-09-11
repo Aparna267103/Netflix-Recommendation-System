@@ -1,72 +1,38 @@
-# Netflix Recommendation System
+# 🎬 Netflix Recommendation System
 
 ## 📌 Project Overview
 
-The Netflix Recommendation System is a machine learning-based application designed to recommend movies and TV shows based on their content characteristics.
+This project analyzes Netflix content and builds a **content-based recommendation system** using Machine Learning and Natural Language Processing techniques.
 
-The project analyzes Netflix titles and uses content-based recommendation techniques to identify titles that are similar to the user's selected movie or TV show.
+The project includes data cleaning, exploratory data analysis (EDA), content trend prediction, content type classification, and a Streamlit dashboard with a recommendation system.
 
-## 🎯 Objectives
+## 🎯 Project Objectives
 
-* Analyze Netflix movie and TV show data.
-* Perform data cleaning and preprocessing.
-* Explore important features in the dataset.
-* Build a content-based recommendation system.
-* Recommend similar movies or TV shows based on the selected title.
-* Deploy the recommendation system using Streamlit.
+* Clean and preprocess the Netflix dataset
+* Perform exploratory data analysis
+* Identify Netflix content trends and patterns
+* Predict future content trends
+* Classify Netflix content as Movie or TV Show
+* Build a content-based recommendation system
+* Create an interactive Streamlit dashboard
 
 ## 🛠️ Technologies Used
 
 * Python
 * Pandas
 * NumPy
+* Matplotlib
+* Seaborn
 * Scikit-learn
+* TF-IDF
+* Cosine Similarity
+* Plotly
 * Streamlit
-* Matplotlib / Seaborn
-* Jupyter Notebook
-* VS Code
-
-## 🔄 Project Workflow
-
-```text
-Netflix Dataset
-      ↓
-Data Cleaning
-      ↓
-Data Preprocessing
-      ↓
-Feature Selection
-      ↓
-Feature Transformation
-      ↓
-Similarity Calculation
-      ↓
-Recommendation System
-      ↓
-Streamlit Application
-```
-
-## 🤖 Recommendation Process
-
-The system uses a content-based recommendation approach.
-
-When a user selects a movie or TV show, the system compares its available content-related features with other titles in the dataset.
-
-Based on the similarity between titles, the system returns a list of recommended movies or TV shows.
-
-## 🌐 Streamlit Application
-
-The project is deployed as an interactive Streamlit application.
-
-The application allows users to:
-
-* Select a Netflix title.
-* Generate recommendations.
-* View similar movies or TV shows.
-* Interact with the recommendation system through a simple web interface.
+* Joblib
 
 ## 📂 Project Structure
 
+```text
 Netflix-Recommendation-System/
 │
 ├── src/
@@ -81,44 +47,82 @@ Netflix-Recommendation-System/
 │
 ├── README.md
 └── requirements.txt
-
-## ▶️ How to Run
-
-### 1. Clone the repository
-
-```bash
-git clone <your-github-repository-link>
 ```
 
-### 2. Install required libraries
+## 🔄 Project Workflow
+
+1. **Data Cleaning**
+
+   * Handle missing values
+   * Remove duplicate records
+   * Clean text columns
+   * Transform date information
+   * Create additional features
+
+2. **Exploratory Data Analysis**
+
+   * Analyze content types
+   * Analyze release-year trends
+   * Identify top countries
+   * Identify popular genres
+   * Analyze content ratings
+
+3. **Recommendation System**
+
+   * Combine relevant content features
+   * Apply TF-IDF Vectorization
+   * Calculate Cosine Similarity
+   * Recommend similar Netflix titles
+
+4. **Trend Prediction**
+
+   * Analyze yearly content counts
+   * Apply Linear Regression
+   * Evaluate the model using MAE and RMSE
+   * Forecast future content trends
+
+5. **Classification**
+
+   * Classify content as Movie or TV Show
+   * Compare Logistic Regression and Random Forest
+   * Evaluate using Accuracy, Precision, Recall and F1 Score
+   * Save the best-performing model
+
+6. **Streamlit Dashboard**
+
+   * Interactive Netflix dashboard
+   * Content filters
+   * KPIs
+   * Charts and visualizations
+   * Content recommendations
+   * Business insights
+
+## 🚀 How to Run
+
+### 1. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Run the Streamlit application
+### 2. Run the Streamlit Dashboard
 
 ```bash
-streamlit run app.py
+streamlit run app/app.py
 ```
 
-The application will open in the browser.
+## 💡 Key Business Insights
 
-## 📊 Results
+The project provides insights into:
 
-The system provides movie and TV show recommendations based on similarity between Netflix titles.
+* Netflix content distribution
+* Popular genres and countries
+* Movie vs TV Show trends
+* Content ratings
+* Release-year patterns
+* Similar-content recommendations
+* Future content trends
 
-## 🔮 Future Improvements
+## 📌 Conclusion
 
-* Add user-based recommendation.
-* Combine content-based and collaborative filtering.
-* Improve recommendation accuracy.
-* Add user ratings and preferences.
-* Deploy the application online.
-
-## 👩‍💻 Project Author
-
-Aparna V
-
-This project was developed as part of an internship/project learning experience.
-
+This project demonstrates how Python, Machine Learning, NLP, data analysis, and visualization techniques can be combined to analyze Netflix content and build a content recommendation system.
