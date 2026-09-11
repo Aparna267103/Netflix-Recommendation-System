@@ -67,19 +67,20 @@ The application allows users to:
 
 ## 📂 Project Structure
 
-```text
 Netflix-Recommendation-System/
 │
-├── app.py
-├── netflix_recommendation.ipynb
-├── requirements.txt
+├── src/
+│   ├── data_cleaning.py
+│   ├── eda.py
+│   ├── recommendation.py
+│   ├── trend_prediction.py
+│   └── classification.py
+│
+├── app/
+│   └── app.py
+│
 ├── README.md
-│
-├── data/
-│   └── netflix_titles.csv
-│
-└── screenshots/
-```
+└── requirements.txt
 
 ## ▶️ How to Run
 
